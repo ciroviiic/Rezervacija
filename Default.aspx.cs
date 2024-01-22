@@ -10,7 +10,7 @@ namespace WebApplication14
 {
     public partial class _Default : Page
     {
-        public string conStr = "Data Source=.DESKTOP-LTP3AF6\\SQLEXPRESS;Initial catalog=rezervacije;Integrated Security=true";
+        public string conStr = "Data Source=.DESKTOP-LTP3AF6\\-SQLEXPRESS;Initial catalog=rezervacije;Integrated Security=true";
         public const int MINSEDISTA = 2;
         public const int MAXSEDISTA = 53;
         public List<int> rezervisana = new List<int>();
@@ -140,8 +140,7 @@ namespace WebApplication14
                         else
                         {
                             mesta.ElementAt(mesto).Click += new EventHandler(izaberiMesto);
-                            if(rezervisano(Int32.Parse(mesta.ElementAt(mesto).Text
-                                )))
+                            if(rezervisano(Int32.Parse(mesta.ElementAt(mesto).Text)))
                             {
                                 mesta.ElementAt(mesto).BackColor = System.Drawing.Color.Red;
                                 mesta.ElementAt(mesto).Enabled  = false;

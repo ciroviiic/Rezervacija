@@ -2,10 +2,10 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <h1>Prikaz sedista autobusa<p>
+    <h1>Prikaz sedista autobusa</h1>
     <asp:Table ID="Table1" runat="server">
     </asp:Table>
-    </p>
+    </h1>
     <table style="width: 18%;">
         <tr>
             <td class="modal-sm" style="width: 120px">Broj sedista</td>
